@@ -1,0 +1,510 @@
+ @media (min-width: 990px) {
+	 
+ }
+ @font-face {
+	font-family: 'Geometria'; 
+	src: url(../fonts/Geometria-Regular.ttf); 
+}
+ 
+/* Жирный */
+@font-face {
+	font-family: 'Geometria bold'; 
+	src: url(../fonts/Geometria-Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'Geometria medium'; 
+	src: url(../fonts/Geometria-Medium.ttf); 
+}
+
+@font-face {
+	font-family: 'Geometria italic'; 
+	src: url(../fonts/Geometria-Italic.ttf); 
+}
+
+@font-face {
+	font-family: 'Geometria ExtraBold'; 
+	src: url(../fonts/Geometria-ExtraBold.ttf); 
+}
+ /* @media (min-width: 1400px) { */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+    
+body {
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.page {
+    font-family: 'Geometria';
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+  }
+
+main {
+    display: block;
+    align-items: center;
+  }
+
+header {
+    width: 100%;
+    height: auto !important;
+    position: relative; 
+    display: flex;
+}
+
+.title_header{
+    position: absolute;
+    left: 220px;
+    top: 200px;
+}
+
+.header_white_ellipse {
+    position: absolute; 
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.ellipse, .page__header {
+    position: absolute; 
+}
+
+.arrow_header {
+    position: absolute;
+    padding-bottom: 10px;
+}
+
+.header_green_ellipse {
+    padding-top: 30px;
+    padding-left: 570px;
+}
+
+.header_blue_ellipse {
+    padding-top: 40px;
+    padding-left: 850px;
+}
+
+.line_title {
+    width: 400px;
+    margin: 0px;
+    border: none;
+    border-top: 5px solid #D9D9D9;
+}
+
+.green_title {
+    padding-left: 5px;
+    font-family: 'Geometria bold'; 
+    color: #82B428;
+	font-size: 48px;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.btn_title {
+    background-image: linear-gradient(to top, #BC1822, #E53322);
+    margin-top: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    background-size: 100% auto;
+    color: white;            
+    font-family: 'Geometria medium';
+    font-size: 20px;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_flat {
+    background-image: linear-gradient(to top, #82B428, #C5D210);
+    margin-top: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    background-size: 100% auto;
+    color: white;            
+    font-family: 'Geometria medium';
+    font-size: 20px;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    /* left: 8%;
+    transform: translate(-50%, 0); */
+}
+
+.container {
+    /* max-width: 1440px; */
+	width: 100%;
+    margin: 0 auto !important;
+    padding: 50px;
+	display: grid;
+    justify-content: center;
+}
+
+.block_left {
+    width: 35%;
+    padding: 30px;
+}
+
+.block_img_right {
+    width: 65%;
+}
+
+.header_blue {
+    font-family: 'Geometria bold'; 
+    color: #2DA3DC;
+	font-size: 36px;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.header_green {
+    font-family: 'Geometria bold'; 
+    color: #82B428;
+	font-size: 36px;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.text_italic {
+    font-family: 'Geometria italic'; 
+    font-size: 17px;
+    padding-left: 30px;
+}
+
+.subject_item {
+	/*position: relative;
+     width: 33.333%; margin: none;  */
+}
+
+.subject_item span{
+	/* display:flex; */
+	/* flex-flow:column wrap; */
+	text-align: left;
+    color: white;
+    position: absolute;
+	z-index: 1;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.subject__pic {
+    width: 100%; 
+	position: relative;
+    /* object-fit: cover;  */
+    /* object-position: bottom;  */
+    border-radius: 10px;
+}
+
+.content {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+
+.subject_best {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/*display:flex;
+	 flex-wrap:wrap; */
+	/* flex-direction:row; */
+    gap: 20px;
+}
+
+.plane_carousel {
+	width:100%;
+	border: 1px solid #C5C5C5;
+	border-radius: 20px;
+    display: grid;
+    gap:  30px;
+    grid-template-columns: 25% 35% 30%;
+    grid-template-rows: 50% 1% 30%;
+}
+
+.plane_img {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-bottom: 30%;
+}
+
+.flat_img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.desc_block {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.parameters {
+    margin-left: 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: flex;
+    flex-wrap: nowrap; 
+    flex-direction: row;
+}
+
+.line_flat {
+    width: 100%;
+    height: 10%;
+    border: none;
+    border-top: 1px solid #000000;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.parameters_item {
+    margin-right: auto;
+}
+
+.header_bold {
+    font-family: 'Geometria bold'; 
+    color: #000000;
+	font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header_extrabold {
+	font-family: 'Geometria ExtraBold'; 
+    color: #000000;
+	font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.slider {
+    width: 100%;
+    align-items: center;
+    text-align:center;
+ }
+ 
+ .dot:active, .dot:hover{
+	background-color: #2DA3DC;
+ }
+ 
+ .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+ .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+ }
+
+.desc_flat_img {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.desc_flat_layouts {
+    background-image: url(../images/effect_plane_main.jpg);
+   
+	background-repeat: no-repeat;
+}
+
+.desc_flat_ceilings {
+	background-image: url(../images/effect_plane_main.jpg);
+	background-repeat: no-repeat;
+   
+}
+
+.desc_flat_window {
+	background-image: url(../images/windows_main.jpg);
+	background-repeat: no-repeat;
+   
+}
+
+.desc_flat_apartments {
+	background-image: url(../images/flats_main.jpg);
+	background-repeat: no-repeat;
+   
+} 
+
+.pos {
+	height: 300px;
+  	/*width: 33.333%;  Можно задать любую другую ширину блока */
+  	margin: .5rem;
+}
+
+.pos>span{
+	position: absolute;
+	text-align: left;
+    color: white;
+}
+
+.pos button {
+	left: 8px;
+}
+
+.details {
+  display: grid;
+  width: 100%;
+  /* grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: 80px 180px 80px;*/
+  grid-gap: 10px;
+  grid-template-areas: "header   header   header"
+                       "main     main     main"
+                       "footer   footer   footer";
+}
+
+.details img {
+    display: inline-block;
+    line-height: 100%;
+    padding: 10px;
+}
+.header_detail {
+	font-family: 'Geometria ExtraBold'; 
+    color: #2DA3DC;
+	font-size: 48px;
+    margin: 30px;
+	text-align: center;
+}
+
+.show_btn {
+	font-family: 'Geometria ExtraBold'; 
+    color: #C5C5C5;
+	font-size: 24px;
+    margin: 30px;
+	text-align: center;
+}
+
+.item-1 {
+  grid-area: header;
+}
+.item-2 {
+  grid-area: main;
+}
+.item-3 {
+  grid-area: footer;
+}
+
+.discount_block {
+	background-image:url(../images/discounts_main.jpg);
+	background-size: 100%;
+}
+
+.discount_block h2, .moving_block h2 {
+	width: 30%;
+	font-family: 'Geometria ExtraBold'; 
+    color: #2DA3DC;
+	font-size: 36px;
+    margin: 30px;
+	text-align: left;
+	left: 0%;
+}
+.discount_block div {
+	text-align: left;
+	width: 50%;
+}
+
+.discount_block button{
+	left: 0px;
+}
+
+ .moving_block p {
+	 margin: 30px;
+	 text-align: left;
+ }
+ 
+ .lead_block {
+	 background-image:url(../images/new_quarter_footer.jpg);
+	 background-size: 100%;
+ }
+ 
+ .lead_block div{
+	 float: left;
+	 width: 50%;
+ }
+ 
+ .lead_block h2 {
+	 font-family: 'Geometria ExtraBold'; 
+    color: #82B428;
+	font-size: 36px;
+    margin: 30px;
+	text-align: left;
+ }
+ 
+ .lead_block p {
+	 color: white;
+	 text-align: left;
+ }
+ 
+ .lead {
+	float: right;
+	width: 40%;
+ }
+ 
+ .form_input {
+	padding: 20px;
+	margin: 10px;
+	border: none;
+	width: 100%;
+	border-radius: 50px;
+ }
+ 
+ .lead button {
+	width:50%;
+	right: 0%;
+	transform: translateX(100%);
+ }
+ 
+ .contacts {
+	background-color: #24A6DF;
+	background-size: 100%;
+	align-items: center;
+ }
+ 
+ .contact_phone {
+	font-size: 30px;
+ }
+ 
+ .links_block, .links_block a, .links_block p {
+	padding: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+ }  
+ 
+ .contacts_icon {
+	 display:inline-block;
+ }
